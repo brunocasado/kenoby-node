@@ -1,0 +1,21 @@
+{
+  "name": "kenoby-node",
+  "version": "0.0.1",
+  "description": "Kenoby API Wrapper",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape ./tests/**/*.js"
+  },
+  "keywords": [
+    "kenoby"
+  ],
+  "author": "Bruno Casado",
+  "license": "ISC",
+  "dependencies": {
+    "require": "^2.4.20",
+    "tape": "^4.6.3"
+  }
+}
