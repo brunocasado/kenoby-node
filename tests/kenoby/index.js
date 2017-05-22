@@ -3,8 +3,9 @@ var kenoby = require('../../index.js');
 
 test('describe instance', function (t) {
 
-  kenoby.setTenant('58c821a0a1f3f6001a3bdd26');
-  kenoby.setAccess('caiom@drconsulta.com', 'drcKenoby123');
+  // to run tests take an account with kenoby
+  kenoby.setTenant('@tenant');
+  kenoby.setAccess('@login', '@password');
   kenoby.getPositions().then(function (data) {
     t.equal(data.constructor, Array );
     t.end();
