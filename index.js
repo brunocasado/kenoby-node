@@ -29,18 +29,18 @@ var _setHeaders = function () {
     'content-type': 'json',
     'Authorization': 'Basic ' + opts.accessToken
   }
-  console.log(opts);
 }
 
 // @todo implement all methods ref.: api.kenoby.com
-// @todo implement a crud interface for request
-
+// @todo implement a crud interface for request GET POST PUT DELETE
 
 var _getPositions = function () {
   _setHeaders(); // temporary
   return new Promise(function (resolve, reject) {
-    request.get(opts._request.url + '/positions', function (error, response, body) {
-      console.log(body);
+    request.get({ 
+      url: opts._request.url + '/positions',
+      headers: opts._request.headers 
+    }, function (error, response, body) {
       if (!error && response.statusCode == 200) {
         try {
           const data = JSON.parse(body);
