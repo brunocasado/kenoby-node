@@ -1,6 +1,6 @@
 {
   "name": "kenoby-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Kenoby API Wrapper",
   "main": "index.js",
   "directories": {
