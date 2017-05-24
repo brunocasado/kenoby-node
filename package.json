@@ -20,5 +20,12 @@
   },
   "devDependencies": {
     "tape": "^4.6.3"
+  },
+  "repository" : { 
+    "type" : "git",
+    "url" : "git@github.com:brunocasado/kenoby-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brunocasado/kenoby-node/issues"
   }
 }
